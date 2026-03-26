@@ -19,3 +19,14 @@ def buscaBinaria(lista, chave):
             fim = meio - 1
 
     return -1
+
+def buscaArvoreBusca(arvore, chave):
+    if arvore is None:
+        return False
+
+    if chave == arvore.valor:
+        return True
+    elif chave < arvore.valor:
+        return buscaArvoreBusca(arvore.esquerda, chave)
+    else:
+        return buscaArvoreBusca(arvore.direita, chave)
