@@ -16,9 +16,25 @@ def gerar_casos(n):
 def medir_tempo(func, arr):
     inicio = time.perf_counter()
     func(arr.copy())
-    fim = time.perf_Counter()
+    fim = time.perf_counter()
     return fim - inicio
 
-#def testar_algoritmo(nome, func, tamanhos, repeticoes = 10):
-#   print(nome)
+def testar_algoritmo(nome, func, tamanhos, repeticoes = 10):
+    print(nome)
 
+    for n in tamanhos:
+        melhor, medio, pior = gerar_casos(n)
+
+        for caso_nome, lista in [
+            ('Melhor: ', melhor),
+            ('Médio: ', medio),
+            ('Pior: ', pior),
+        ]:
+            tempos = []
+
+            for _ in range(repeticoes):
+                tempos.append(medir_tempo(func, lista))
+
+            media = statistics.mean(tempos)
+
+            print(f"Tamanho {n} | {caso_nome}: {media:.6f} s")
