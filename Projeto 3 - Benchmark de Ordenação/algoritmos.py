@@ -10,7 +10,11 @@ def insertion_sort (arr):
 def quick_sort(arr):
     if len(arr) <= 1:
         return arr
-    pivo = arr[0]
-    menores = [x for x in arr[1:] if x <= pivo]
-    maiores = [x for x in arr[1:] if x > pivo]
-    return quick_sort(menores) + [pivo] + quick_sort(maiores)
+
+    pivo = arr[len(arr) // 2]
+
+    menores = [x for x in arr if x < pivo]
+    iguais = [x for x in arr if x == pivo]
+    maiores = [x for x in arr if x > pivo]
+
+    return quick_sort(menores) + iguais + quick_sort(maiores)
