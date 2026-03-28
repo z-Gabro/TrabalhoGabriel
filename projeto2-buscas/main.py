@@ -22,8 +22,8 @@ def analisar(nome, tempos):
     desvio = statistics.stdev(tempos)
     print(f"{nome}: média={media:.6f}s | desvio={desvio:.6f}s")
 
-
-tamanhos = [50000, 500000, 5000000]
+# Altere o volume de dados
+tamanhos = [5000, 50000, 500000]
 
 for n in tamanhos:
     print(f"\n--- Teste com n = {n} ---")
@@ -32,7 +32,7 @@ for n in tamanhos:
     random.shuffle(lista)
     chave = random.choice(lista)
 
-    # IMPORTANTE: lista ordenada para busca binária
+    # Lista ordenada para busca binária
     lista_ordenada = lista.copy()
 
     # Criar árvore
