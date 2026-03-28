@@ -19,12 +19,16 @@ O foco do projeto é avaliar o comportamento dos algoritmos em diferentes cenár
 
 ```bash
 git clone https://github.com/ghostlink359/TrabalhoGabriel.git
-
+```
 2. Acesse a pasta do Projeto:
 
-cd Projeto 3 - Benchmark de Ordenação
+```bash
+cd projeto3-ordenacao
+```
 
 3. Execute o código:
 
+```bash
 python main.py
+```
 
