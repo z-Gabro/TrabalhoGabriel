@@ -1,7 +1,7 @@
-from BST import BST
-from AVL import AVL
-from RubroNegra import RubroNegra
-from Caixeiro import realizar_experimentos
+from projeto1_arvores.BST import BST
+from projeto1_arvores.AVL import AVL
+from projeto1_arvores.RubroNegra import RubroNegra
+from projeto1_arvores.Caixeiro import realizar_experimentos
 import random
 
 def relatorio_arvore(arvore, nome):
@@ -34,7 +34,7 @@ def relatorio_arvore(arvore, nome):
     print(f"9. Altura após a remoção: {arvore.altura()}")
     print("-" * 30 + "\n")
 
-def main():
+def mainProjeto1():
     while True:
         print("====== MENU DO TRABALHO ======")
         print("1. Testar Árvore Binária de Busca (BST)")
@@ -61,4 +61,4 @@ def main():
                 print("Opção inválida! Tente novamente.\n")
 
 if __name__ == "__main__":
-    main()
+    mainProjeto1()
