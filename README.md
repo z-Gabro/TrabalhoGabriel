@@ -30,6 +30,7 @@ Foram abordados:
 
 ## Estrutura do Repositório
 
+```
 TrabalhoGabriel/
 │
 ├── projeto1_arvores/
@@ -52,6 +53,7 @@ TrabalhoGabriel/
 ├── main.py # Menu principal
 ├── relatorio-final.pdf
 └── README.md
+```
 
 ---
 
@@ -147,7 +149,7 @@ Avaliar o desempenho dos algoritmos em diferentes cenários.
 
 Na raiz do projeto:
 
-```bash
+```
 python main.py
 ```
 
@@ -155,17 +157,20 @@ python main.py
 
 O sistema exibirá:
 
+```
 ===== SISTEMA DE PROJETOS =====
 1 - Projeto 1 (Árvores)
 2 - Projeto 2 (Buscas)
 3 - Projeto 3 (Ordenação)
 0 - Sair
+```
+
 Basta escolher o projeto desejado.
 
 ### Reprodutibilidade
 Os experimentos utilizam semente fixa para garantir consistência:
 
-```bash
+```
 random.seed(42)
 ```
 
@@ -182,4 +187,6 @@ O relatório completo contendo:
 
 está disponível em:
 
+```
 relatorio-final.pdf
+```
