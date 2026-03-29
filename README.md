@@ -188,5 +188,5 @@ O relatório completo contendo:
 está disponível em:
 
 ```
-relatorio-final.pdf
+relatorio_final.pdf
 ```
