@@ -6,6 +6,8 @@ import random
 from Arvore import ArvoreBusca
 from AlgoritmosBusca import buscaSequencial, buscaBinaria, buscaArvoreBusca
 
+# Altere para mudar os valores utilizados na geração de listas aleatórias
+random.seed(42)
 
 def medir_tempo(funcao, *args, repeticoes=30):
     tempos = []
