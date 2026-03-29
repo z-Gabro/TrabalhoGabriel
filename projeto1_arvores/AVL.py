@@ -1,4 +1,4 @@
-from BST import BST, No
+from projeto1_arvores.BST import BST, No
 
 class AVL(BST):
     def _obter_altura(self, no):
